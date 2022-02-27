@@ -11,7 +11,7 @@ Age = st.number_input("Customer's age", min_value=18)
 EstimatedSalary = st.number_input("Customer's estimated salary", min_value=1)
 CreditScore = st.number_input("Customer's credit score", min_value=300)
 Balance = st.number_input("Customer's bank account balance")
-NumOfProducts = st.number("Number of accounts open", min_value=1)
+NumOfProducts = st.number_input("Number of accounts open", min_value=1)
 
 prediction = model.predict([[Age, EstimatedSalary, CreditScore, Balance, NumOfProducts]])
 
