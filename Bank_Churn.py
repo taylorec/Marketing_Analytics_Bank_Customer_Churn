@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 import joblib
 
-model = joblib.load('GC_churn.joblib')
+model = joblib.load('RF_churn.joblib')
 st.title("Banking Customer Churn Prediction")
 st.write("This model predicts if a customer will churn.")
 
